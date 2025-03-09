@@ -1,0 +1,28 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/centos9s" 
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "Centos9.vdi" 
+    vb.cpus = 2
+    vb.memory = 4096
+    vb.customize ["createhd", "--filename", "D:/VM-Vbox/Centos9.vdi", "--size", 25600] 
+
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+    useradd sishurupov
+    echo "sishurupov:0880999" | chpasswd
+    usermod -aG wheel sishurupov
+
+    dnf update -y
+
+    dnf install -y https://www.elrepo.org/elrepo-release-9.el9.elrepo.noarch.rpm
+
+    dnf --enablerepo=elrepo-kernel install -y kernel-ml
+
+    grub2-set-default 2 
+    grub2-mkconfig -o /boot/grub2/grub.cfg
+    shutdown -r now
+  SHELL
+
+end
