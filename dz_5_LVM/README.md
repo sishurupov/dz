@@ -18,7 +18,9 @@ https://gitlab.com/otus_linux/stands-03-lvm
 
 
 Ход выполнения задания:
+
 1.Создал временный том на 8Г для переноса с корневого тома с помощью rsync.
+
 Обновляем настройки загрузки и ребутаемся для проверки.
 
 ![image](https://github.com/user-attachments/assets/c75d4b38-a7f8-46dc-9738-058da88c4181)
@@ -31,6 +33,7 @@ https://gitlab.com/otus_linux/stands-03-lvm
 ![image](https://github.com/user-attachments/assets/d0a27186-458f-440b-835b-120b12ed4e05)
 
 2.Выделить том под /home
+
 Создал новый том для /home на 10Г на разделе sda3 и настроил его монтирование, предварительно скопировав все данные с предыдущего тома. Снова fstab, ребут, проверка.
 
 ![image](https://github.com/user-attachments/assets/2ddbc175-d05a-46dd-933b-6ff71f755e72)
@@ -38,6 +41,7 @@ https://gitlab.com/otus_linux/stands-03-lvm
 ![image](https://github.com/user-attachments/assets/bc849bc7-9acd-4d6d-a066-7f7ae172931d)
 
 3.Выделить том под /var (/var - сделать в mirror)
+
 С помощью mdadm настроил RAID1 с использованием дисков sdc и sdd, смонтировал его в /var, скопировав данные из предыдущего /var Снова fstab, ребут, проверка.
 
 ![image](https://github.com/user-attachments/assets/ce1d0415-b353-45ce-b9b3-2faac764d988)
@@ -46,14 +50,17 @@ https://gitlab.com/otus_linux/stands-03-lvm
 
 
 4. Для /home - сделать том для снэпшотов
+5. 
 Для тома /home создал другой том для хранения снапшотов
 
 ![image](https://github.com/user-attachments/assets/de28a278-b67c-416f-bced-939fa458a348)
 
 5. Прописать монтирование в fstab (попробовать с разными опциями и разными файловыми системами на выбор)
+   
    Файл залил отдельно (криво отображается)
 
 6. Сгенерировать файлы в /home/
+   
 снять снэпшот
 удалить часть файлов
 восстановиться со снэпшота
