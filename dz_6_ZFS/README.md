@@ -55,6 +55,7 @@ NAME  PROPERTY   VALUE  SOURCE
 otus  available  350M   -
 
 Тип pool
+
 zpool status otus
   pool: otus
   state: ONLINE
@@ -63,6 +64,7 @@ zpool status otus
   action: Enable all features using 'zpool upgrade'. Once this is done,
           the pool may no longer be accessible by software that does not support
           the features. See zpool-features(7) for details.
+          
   config:
 
           NAME                         STATE     READ WRITE CKSUM
@@ -72,6 +74,7 @@ zpool status otus
               /home/zpoolexport/fileb  ONLINE       0     0     0
 
 Значение recordsize
+
 zfs get recordsize otus
 NAME  PROPERTY    VALUE    SOURCE
 otus  recordsize  128K     local
