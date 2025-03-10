@@ -62,6 +62,7 @@ https://gitlab.com/otus_linux/stands-03-lvm
 
 Создал несколько файлов, сделал и смонтировал снапшот, удалил файлы и восстановил их из снапшота.
 
-![image](https://github.com/user-attachments/assets/6e0273ca-a01f-4841-aad1-1530bc8170a3)
+![image](https://github.com/user-attachments/assets/a8018c01-18fd-4cdc-84df-58efc60eabc7)
+
 
 
