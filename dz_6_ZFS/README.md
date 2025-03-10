@@ -50,7 +50,9 @@ TXT файлы лучше всего были сжаты gzip (26кб) и lz4 (4
 
 2. Определить настройки пула.
 
-Размер хранилища: zfs get available otus
+Размер хранилища:
+
+zfs get available otus
 NAME  PROPERTY   VALUE  SOURCE
 otus  available  350M   -
 
