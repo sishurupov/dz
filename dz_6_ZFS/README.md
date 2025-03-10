@@ -78,18 +78,21 @@ otus  available  350M   -
 
  zfs get recordsize otus
 NAME  PROPERTY    VALUE    SOURCE
+
 otus  recordsize  128K     local
 
 Какое сжатие используется
 
 zfs get compression otus
 NAME  PROPERTY     VALUE           SOURCE
+
 otus  compression  zle             local
 
 Какая контрольная сумма используется
 
  zfs get checksum otus
 NAME  PROPERTY  VALUE      SOURCE
+
 otus  checksum  sha256     local
 
 ![image](https://github.com/user-attachments/assets/72b3e8e2-6bf3-4fa2-a64c-60a91c5c0e03)
