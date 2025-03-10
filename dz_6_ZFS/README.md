@@ -53,7 +53,9 @@ TXT файлы лучше всего были сжаты gzip (26кб) и lz4 (4
 Размер хранилища:
 
 zfs get available otus
+
 NAME  PROPERTY   VALUE  SOURCE
+
 otus  available  350M   -
 
 Тип pool
@@ -77,6 +79,7 @@ otus  available  350M   -
 Значение recordsize
 
  zfs get recordsize otus
+ 
 NAME  PROPERTY    VALUE    SOURCE
 
 otus  recordsize  128K     local
@@ -84,6 +87,7 @@ otus  recordsize  128K     local
 Какое сжатие используется
 
 zfs get compression otus
+
 NAME  PROPERTY     VALUE           SOURCE
 
 otus  compression  zle             local
@@ -91,6 +95,7 @@ otus  compression  zle             local
 Какая контрольная сумма используется
 
  zfs get checksum otus
+ 
 NAME  PROPERTY  VALUE      SOURCE
 
 otus  checksum  sha256     local
