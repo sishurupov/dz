@@ -22,19 +22,26 @@ Vagrant стенд для NFS
 
 Создаем файл otus.txt на сервере:
 
-# На сервере
+ На сервере
+
 cd /export/upload
+
 touch otus.txt
+
 echo "OtusOtus" > otus.txt
 
 Проверяем на клиенте:
 
-# На клиенте
-cd /mnt/nfs/upload
+cd /mnt/nfs/upload 
+
 ls -l
+
 cat otus.txt
+
 total 4
+
 -rw-r--r--. 1 root root 9 Aug 25 22:39 otus.txt
+
 OtusOtus
 
 ![image](https://github.com/user-attachments/assets/e526b609-9d0f-43f9-b021-e5b2a4ac166f)
