@@ -40,7 +40,7 @@ cat otus.txt
 
 total 4
 
--rw-r--r--. 1 root root 9 Aug 25 22:39 otus.txt
+-rw-r--r--. 1 root root 12 Mar 25 22:39 otus.txt
 
 OtusOtus
 
