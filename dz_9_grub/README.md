@@ -1,7 +1,10 @@
 
 Включить отображение меню Grub.
+
 Попасть в систему без пароля несколькими способами.
+
 Установить систему с LVM, после чего переименовать VG.
+
 
 
 1. Включить отображение меню Grub.
@@ -14,7 +17,7 @@ GRUB_TIMEOUT_STYLE=menu
 
 GRUB_CMDLINE_LINUX="biosdevname=0 no_timer_check vga=792 nomodeset text crashkernel=1G-4G:192M,4G-64G:256M,64G-:512M resume=/dev/mapper/centotus-swap rd.lvm.lv=centotus/root rd.lvm.lv=centotus/swap net.ifnames=0"
 
-Jбновляем конфигурацию Grub:
+Обновляем конфигурацию Grub:
 
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
