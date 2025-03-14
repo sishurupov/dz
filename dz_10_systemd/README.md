@@ -40,5 +40,3 @@
 Убедились, что оба экземпляра Nginx работают корректно, и CGI-сценарии выполняются, используя curl.
 
 
-![image](https://github.com/user-attachments/assets/c5f85b38-c451-4acf-ab86-2a27df21f793)
-
